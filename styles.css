@@ -80,6 +80,16 @@ h1::after {
   text-align: left;
 }
 
+#aboutMe h2 {
+  color: #BFD0CA;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: max-content;
+  font-size: 1.3em;
+  font-weight: 200;
+}
+
 .description li {
   list-style: none;
 }
@@ -111,33 +121,6 @@ h1::after {
 
 #aboutMe img:hover {
   box-shadow: 3px 2px 7px #2A9D90BF;
-}
-
-/* Contacts */
-.contacts {
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #223f4bce;
-  overflow-x: hidden;
-  padding-top: 15%;
-}
-
-.contacts a {
-  color: #2A9D8F;
-  font-weight: 700;
-  padding: 1.3em;
-  text-decoration: none;
-  font-size: 1.3em;
-  display: block;
-}
-
-.contacts a:hover {
-  color: #BFD0CA;
-  background-color: #90a49d9d;
 }
 
 /* Animations */
