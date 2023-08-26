@@ -1,1 +1,170 @@
+/* General */
+:root {
+  --bg-color: #1c343e;
+  --typeSpeed: 3s;
+  --typeCharNum: 18;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background: var(--bg-color);
+  padding-top: 5%;
+  padding-left: 10%;
+  color: #95A5A0;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+b, strong {
+  color: #2A9D8F;
+}
+
+/* Heading */
+h1 {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  color: #BFD0CA;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: max-content;
+  font-weight: 200;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--bg-color);
+  animation: typing var(--typeSpeed)
+    steps(var(--typeCharNum)) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: #2A9D8F;
+  animation: typing var(--typeSpeed)
+      steps(var(--typeCharNum)) 1s forwards,
+    blink 750ms steps(var(--typeCharNum)) infinite;
+}
+
+/* About Me */
+#aboutMe {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeUp 2s ease calc(var(--typeSpeed) + 2s) forwards;
+  color: #95A5A0;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.description li {
+  list-style: none;
+}
+
+.description ul li::before {
+  content: "\00BB";
+  color: #2A9D8F;
+  display: inline-block;
+  width: 1em;
+}
+
+#aboutMe p {
+  max-width: 45vw;
+}
+
+#aboutMe img {
+  border-radius: 10%;
+  float: right;
+  object-fit: cover;
+  max-height: 35vh;
+  max-width: 35vw;
+  margin-left: 3em;
+  margin-right: 5em;
+  border: solid;
+  border-width: 2px;
+  border-color: #2A9D8F;
+  border-width: 5px;
+}
+
+#aboutMe img:hover {
+  box-shadow: 3px 2px 7px #2A9D90BF;
+}
+
+/* Contacts */
+.contacts {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #223f4bce;
+  overflow-x: hidden;
+  padding-top: 15%;
+}
+
+.contacts a {
+  color: #2A9D8F;
+  font-weight: 700;
+  padding: 1.3em;
+  text-decoration: none;
+  font-size: 1.3em;
+  display: block;
+}
+
+.contacts a:hover {
+  color: #BFD0CA;
+  background-color: #90a49d9d;
+}
+
+/* Animations */
+@keyframes typing {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Resposive Media */
+@media screen and (max-width: 1100px) {
+  #aboutMe img {display: none;}
+  #aboutMe li {margin-right: 20%;}
+  #aboutMe {margin-right: 10%;}
+  .contacts {width: 130px;}
+  .contacts a {font-size: 1.1em;}
+}
