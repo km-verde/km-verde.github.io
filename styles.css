@@ -144,6 +144,21 @@ h1::after {
   box-shadow: 3px 2px 7px #2A9D90BF;
 }
 
+/* Projects */
+#projects {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeUp 2s ease calc(var(--typeSpeed) + 2s) forwards;
+  color: #95A5A0;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
 /* Animations */
 @keyframes typing {
   to {
