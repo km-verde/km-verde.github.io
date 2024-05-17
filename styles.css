@@ -8,7 +8,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +18,6 @@ body {
   align-items: flex-start;
   text-align: left;
   background: var(--bg-color);
-  padding-left: 10%;
   color: #95A5A0;
   line-height: 1.5;
   letter-spacing: 1px;
@@ -42,11 +40,14 @@ h2 {
 /* Heading */
 
 .container {
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
   max-width: 100%;
+  padding-left: 10%;
 }
 
 #intro h1 {
+  padding-top: 25vw;
   font-size: clamp(1.5rem, 3.5vw + 1.5rem, 4.5rem);
   color: #BFD0CA;
   position: relative;
@@ -60,7 +61,7 @@ h2 {
 h1::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 25vw;
   right: 0;
   bottom: 0;
   left: 0;
@@ -82,7 +83,6 @@ h1::after {
 
 #subtitle {
   max-width: 45vw;
-  padding-bottom: 11vh;
   text-align: justify;
   font-size: 1.1em;
   opacity: 0;
@@ -92,6 +92,51 @@ h1::after {
 
 #subtitle h3 {
   font-size: 1.7em;
+}
+
+/* Row Boxes */
+.row {
+  width: 80vw;
+  font-weight: 3vw;
+  padding-left: 11%;
+}
+
+.column {
+  float: left;
+  margin: 0 auto;
+  width: 29%;
+  min-height: 350px;
+  text-align: left;
+  background-color: #0f2028;
+
+  margin: 1%;
+  border-radius: 25px;
+}
+
+.column:hover {
+  background-color: rgba(47, 72, 84, 0.876)
+}
+
+div.column:hover {
+  box-shadow: 3px 2px 7px #2A9D90BF;
+}
+
+.column h3, .column p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.column h3 {
+  margin-top: 25%;
+  font-weight: 500;
+  color: #BFD0CA;
+}
+
+.column p {
+  font-size: 0.75em;
+  font-weight: 300;
+  color: #95A5A0;
 }
 
 /* About Me */
@@ -107,6 +152,7 @@ h1::after {
   color: #95A5A0;
   margin-bottom: 5%;
   text-align: left;
+  padding-left: 10%;
 }
 
 .description li {
@@ -146,17 +192,22 @@ h1::after {
 
 /* Projects */
 #projects {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  font-size: 1.3rem;
-  font-weight: 300;
   opacity: 0;
   transform: translateY(3rem);
+  align-items: center;
+  flex-direction: row;
   animation: fadeUp 2s ease calc(var(--typeSpeed) + 2s) forwards;
-  color: #95A5A0;
-  margin-bottom: 5%;
-  text-align: left;
+}
+
+#projects h2 {
+  color: #BFD0CA;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: max-content;
+  font-size: 1.8em;
+  font-weight: 200;
+  padding-left: 12%;
+  margin-bottom: 1vw;
 }
 
 /* Animations */
@@ -182,8 +233,19 @@ h1::after {
 /* Resposive Media */
 @media screen and (max-width: 1100px) {
   #subtitle h3 {font-size: 1.5em;}
-  #subtitle {max-width: 55vw;}
+  #subtitle {max-width: 70vw;}
+  .column h3 {font-size: 1em}
+  .column p {font-size: 0.75em}
   #aboutMe img {display: none;}
+  #aboutMe p {max-width: 70vw;}
   #aboutMe li {margin-right: 20%;}
   #aboutMe {margin-right: 10%;}
+}
+
+@media screen and (max-width: 900px) {
+  .column {width: 45%;}
+}
+
+@media screen and (max-width: 700px) {
+  .column {width: 80%;}
 }
