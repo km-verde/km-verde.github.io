@@ -37,13 +37,13 @@ h2 {
   font-weight: 200;
 }
 
+
 /* Heading */
 
 .container {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  padding-left: 10%;
 }
 
 #intro h1 {
@@ -55,6 +55,7 @@ h2 {
   position: relative;
   width: max-content;
   font-weight: 200;
+  margin-left: 10%;
 }
 
 #intro h1::before,
@@ -88,6 +89,7 @@ h1::after {
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeUp 2s ease calc(var(--typeSpeed) + 2s) forwards;
+  margin-left: 10%;
 }
 
 #subtitle h3 {
@@ -98,7 +100,7 @@ h1::after {
 .row {
   width: 80vw;
   font-weight: 3vw;
-  padding-left: 11%;
+  margin-left: 11%;
 }
 
 .column {
@@ -114,7 +116,7 @@ h1::after {
 }
 
 .column:hover {
-  background-color: rgba(47, 72, 84, 0.876)
+  background-color: rgba(47, 72, 84, 0.876);
 }
 
 div.column:hover {
@@ -152,7 +154,7 @@ div.column:hover {
   color: #95A5A0;
   margin-bottom: 5%;
   text-align: left;
-  padding-left: 10%;
+  margin-left: 10%;
 }
 
 .description li {
@@ -206,8 +208,8 @@ div.column:hover {
   width: max-content;
   font-size: 1.8em;
   font-weight: 200;
-  padding-left: 12%;
   margin-bottom: 1vw;
+  margin-left: 12%;
 }
 
 /* Animations */
