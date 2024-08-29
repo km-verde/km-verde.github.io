@@ -42,6 +42,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+    color: #2A9D8F; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
 
 /* Heading */
 
