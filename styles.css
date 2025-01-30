@@ -205,6 +205,55 @@ div.column:hover {
   box-shadow: 3px 2px 7px #2A9D90BF;
 }
 
+
+/* Experience */
+#experience {
+  align-items: center;
+  font-weight: 300;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeUp 2s ease calc(var(--typeSpeed) + 2s) forwards;
+  color: #95A5A0;
+  margin-bottom: 5%;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+#experience a {
+  text-decoration: none;
+  color: inherit;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+#experience a:hover {
+  text-shadow: 3px 2px 7px #5d7574bf;;
+}
+
+#experience h3 {
+  padding-top: 2%;
+  max-width: 45vw;
+  font-size: 1.5em;
+  color: #44cda2;
+}
+
+#experience li {
+  list-style: none;
+  max-width: 45vw;
+}
+
+#experience ul li::before {
+  content: "\00BB";
+  color: #2A9D8F;
+  display: inline-block;
+  width: 1em;
+}
+
+#experience p {
+  max-width: 45vw;
+}
+
 /* Projects */
 #projects {
   opacity: 0;
