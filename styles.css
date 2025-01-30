@@ -228,6 +228,8 @@ div.column:hover {
 #personalWebsite {
   background-image: url("images/website.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
 
@@ -240,6 +242,8 @@ div.column:hover {
 #collegeScheduler {
   background-image: url("images/scheduler.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
 
@@ -254,6 +258,16 @@ div.column:hover {
 #tuneTally {
   background-image: url("images/tunetally.png");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+#popSign {
+  background-image: url("images/popsign.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
 
