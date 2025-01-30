@@ -37,10 +37,6 @@ h2 {
   font-weight: 200;
 }
 
-a {
-  text-decoration: none;
-}
-
 
 /* Heading */
 
@@ -83,7 +79,7 @@ h1::after {
   background: #2A9D8F;
   animation: typing var(--typeSpeed)
       steps(var(--typeCharNum)) 1s forwards,
-    blink 750ms steps(var(--typeCharNum)) infinite;
+    blink 750ms linear infinite;
 }
 
 #subtitle {
@@ -98,6 +94,19 @@ h1::after {
 
 #subtitle h3 {
   font-size: 1.7em;
+}
+
+#button {
+  padding-top: 10%;
+  left: 50%;
+  font-size: 2em;
+  color: #BFD0CA;
+  position: absolute;
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+
+#button a {
+  text-decoration: none;
 }
 
 /* Row Boxes */
@@ -216,6 +225,38 @@ div.column:hover {
   margin-left: 12%;
 }
 
+#personalWebsite {
+  background-image: url("images/website.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+#activistSite {
+  background-image: url("images/dropOfADimeImg.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+#collegeScheduler {
+  background-image: url("images/scheduler.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+#jellyfishing {
+  background-image: url("images/jellyfishing.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+#tuneTally {
+  background-image: url("images/tunetally.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
 /* Animations */
 @keyframes typing {
   to {
@@ -236,17 +277,26 @@ div.column:hover {
   }
 }
 
+@keyframes pulse {
+  from { 
+    transform: scale(0.8); 
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
 /* Resposive Media */
 @media screen and (max-width: 1100px) {
   #subtitle h3 {font-size: 1.5em;}
   #subtitle {max-width: 70vw;}
+  #button a {font-size: 1em;}
   .column h3 {font-size: 1em}
   .column p {font-size: 0.75em}
   #aboutMe img {display: none;}
   #aboutMe p {max-width: 70vw;}
   #aboutMe li {margin-right: 20%;}
   #aboutMe {margin-right: 10%;}
-  .container {margin-top: 25vh;}
 }
 
 @media screen and (max-width: 900px) {
