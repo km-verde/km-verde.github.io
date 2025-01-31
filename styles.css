@@ -360,6 +360,8 @@ div.column:hover {
   #aboutMe p {max-width: 70vw;}
   #aboutMe li {margin-right: 20%;}
   #aboutMe {margin-right: 10%;}
+  #experience p {max-width: 70vw;}
+  #experience li {max-width: 60vw;}
 }
 
 @media screen and (max-width: 900px) {
