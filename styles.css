@@ -96,6 +96,11 @@ h1::after {
   font-size: 1.7em;
 }
 
+#intro img {
+  margin-right: 3%;
+  flex-direction: row;
+}
+
 #button {
   padding-top: 10%;
   left: 50%;
