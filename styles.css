@@ -84,7 +84,6 @@ h1::after {
 }
 
 #subtitle {
-  max-width: 45vw;
   text-align: justify;
   font-size: 1.1em;
   opacity: 0;
@@ -99,7 +98,6 @@ h1::after {
 
 #subtitle p {
   max-width: 45vw;
-  font-size: 1em;
 }
 
 #intro img {
@@ -108,7 +106,7 @@ h1::after {
 }
 
 #button {
-  margin-left: 50%;
+  left: 40%;
   font-size: 2em;
   color: #BFD0CA;
   position: absolute;
@@ -364,7 +362,7 @@ div.column:hover {
   #subtitle h3 {font-size: 1.5em;}
   #subtitle p {
     font-size: 1em;
-    max-width: 90vw;
+    max-width: 70vw;
   }
   #subtitle a img {
       width: 2.5em !important; 
