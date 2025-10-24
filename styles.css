@@ -99,6 +99,7 @@ h1::after {
 
 #subtitle p {
   max-width: 45vw;
+  font-size: 1em;
 }
 
 #intro img {
