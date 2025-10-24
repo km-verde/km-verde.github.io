@@ -361,8 +361,10 @@ div.column:hover {
 /* Resposive Media */
 @media screen and (max-width: 1100px) {
   #subtitle h3 {font-size: 1.5em;}
-  #subtitle p {max-width: 70vw;}
-  #subt
+  #subtitle p {
+    font-size: 1em;
+    max-width: 90vw;
+  }
   #subtitle a img {
       width: 2.5em !important; 
       height: 2.5em !important;
