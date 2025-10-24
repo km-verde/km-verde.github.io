@@ -44,7 +44,7 @@ h2 {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #intro h1 {
@@ -103,7 +103,7 @@ h1::after {
 }
 
 #button {
-  padding-top: 10%;
+  margin-top: 2rem;
   left: 50%;
   font-size: 2em;
   color: #BFD0CA;
