@@ -97,6 +97,10 @@ h1::after {
   font-size: 1.7em;
 }
 
+#subtitle p {
+  max-width: 45vw;
+}
+
 #intro img {
   margin-right: 3%;
   flex-direction: row;
@@ -358,9 +362,10 @@ div.column:hover {
 @media screen and (max-width: 1100px) {
   #subtitle h3 {font-size: 1.5em;}
   #subtitle p {max-width: 70vw;}
+  #subt
   #subtitle a img {
-      width: 3em !important; 
-      height: 3em !important;
+      width: 2.5em !important; 
+      height: 2.5em !important;
   }
   #button a {font-size: 1em;}
   .column h3 {font-size: 1em}
