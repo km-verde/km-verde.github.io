@@ -103,8 +103,7 @@ h1::after {
 }
 
 #button {
-  margin-top: 2rem;
-  left: 50%;
+  margin-left: 50%;
   font-size: 2em;
   color: #BFD0CA;
   position: absolute;
@@ -358,7 +357,11 @@ div.column:hover {
 /* Resposive Media */
 @media screen and (max-width: 1100px) {
   #subtitle h3 {font-size: 1.5em;}
-  #subtitle {max-width: 70vw;}
+  #subtitle p {max-width: 70vw;}
+  #subtitle a img {
+      width: 3em !important; 
+      height: 3em !important;
+  }
   #button a {font-size: 1em;}
   .column h3 {font-size: 1em}
   .column p {font-size: 0.75em}
