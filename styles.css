@@ -363,12 +363,12 @@ div.column:hover {
 @media screen and (max-width: 1100px) {
   #subtitle h3 {font-size: 1.5em;}
   #subtitle p {
-    font-size: 1em;
+    font-size: 1.2em;
     max-width: 70vw;
   }
   #subtitle a img {
-      width: 2em !important; 
-      height: 2em !important;
+    width: 2em !important; 
+    height: 2em !important;
   }
   #button a {font-size: 1em;}
   .column h3 {font-size: 1em}
